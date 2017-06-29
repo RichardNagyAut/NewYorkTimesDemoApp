@@ -6,4 +6,5 @@ struct ArticleDTO {
     var title: String?
     var id: Int64?
     var by: String?
+    var url: String?
 }

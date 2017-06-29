@@ -1,7 +1,7 @@
 import Foundation
 
-typealias mostPopularCompletionHandler = (success: Bool, [Article])
+typealias mostPopularCompletionHandler = (Bool, [Article]) -> ()
 
 protocol ArticleListInteractorInput {
-    func getMostPopularArticles(completionHandler:mostPopularCompletionHandler)
+    func fetchMostPopularArticles(completionHandler:mostPopularCompletionHandler?)
 }

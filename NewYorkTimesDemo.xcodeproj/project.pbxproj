@@ -23,6 +23,7 @@
 		B1DCABCF1F04F3BC002C0441 /* ArticleListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DCABCE1F04F3BC002C0441 /* ArticleListInteractor.swift */; };
 		B1DCABD11F04F718002C0441 /* ArticleListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DCABD01F04F718002C0441 /* ArticleListTableViewCell.swift */; };
 		B1DCABD41F0510E3002C0441 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1DCABD61F0510E3002C0441 /* Localizable.strings */; };
+		B1DCABDA1F05225A002C0441 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DCABD91F05225A002C0441 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		B1DCABD01F04F718002C0441 /* ArticleListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListTableViewCell.swift; sourceTree = "<group>"; };
 		B1DCABD51F0510E3002C0441 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B1DCABD71F0510E9002C0441 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B1DCABD91F05225A002C0441 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				B1DCABB61F04E1BE002C0441 /* Coordinator */,
 				B1DCABB11F04E127002C0441 /* ArticleList */,
 				B1DCAB9F1F04E05A002C0441 /* AppDelegate.swift */,
+				B1DCABD81F052032002C0441 /* Networking */,
 				B1DCABA31F04E05A002C0441 /* Main.storyboard */,
 				B1DCABA61F04E05A002C0441 /* Assets.xcassets */,
 				B1DCABA81F04E05A002C0441 /* LaunchScreen.storyboard */,
@@ -152,6 +155,14 @@
 				B1DCABCA1F04F10C002C0441 /* ArticleDTO.swift */,
 			);
 			name = Article;
+			sourceTree = "<group>";
+		};
+		B1DCABD81F052032002C0441 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B1DCABD91F05225A002C0441 /* NetworkService.swift */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +250,7 @@
 				B1DCABD11F04F718002C0441 /* ArticleListTableViewCell.swift in Sources */,
 				B1DCABC21F04ECD8002C0441 /* ArticleListPresenterInput.swift in Sources */,
 				B1DCABB81F04E1EE002C0441 /* AppCoordinator.swift in Sources */,
+				B1DCABDA1F05225A002C0441 /* NetworkService.swift in Sources */,
 				B1DCABA01F04E05A002C0441 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +428,7 @@
 				B1DCABB01F04E05A002C0441 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,6 +10,14 @@ struct ArticlePM {
     var by: String?
     
     init(model: Article) {
-        
+        self.imageURL = model.imageURL
+        self.title = model.title
+        self.by = model.by
+        self.id = model.id
+        if let date = model.publishedDate {
+            let formatter = DateFormatter()
+            formatter.dateStyle = .short
+            self.publishedDate = formatter.string(from: date)
+        }
     }
 }

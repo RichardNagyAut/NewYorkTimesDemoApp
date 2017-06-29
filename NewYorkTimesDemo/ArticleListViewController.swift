@@ -2,14 +2,14 @@ import UIKit
 
 class ArticleListViewController: UIViewController, ArticleListView {
     var presenter: ArticleListPresenterInput!
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     fileprivate var articles = [ArticlePM]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // TableView properties
         tableView.delegate = self
         tableView.dataSource = self
@@ -19,23 +19,31 @@ class ArticleListViewController: UIViewController, ArticleListView {
         
         self.navigationItem.title = NSLocalizedString("articleListTitle", comment: "")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super .viewDidAppear(animated)
+        self.presenter.getMostPopularArticles()
     }
     
     func showArticles(articles: [ArticlePM]) {
         self.articles = articles
-        tableView.reloadData()
+        DispatchQueue.main.async { [weak tableView = self.tableView] in
+            if let tableView = tableView {
+                tableView.reloadData()
+            }
+        }
     }
-
+    
+    func showError(message: String) {
+        // TODO: show error message
+    }
+    
 }
 
 
 extension ArticleListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    
+        
     }
 }
 

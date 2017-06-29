@@ -48,5 +48,9 @@ class ArticleListTableViewCell: UITableViewCell {
             }
         }
     }
-
+    
+    
+    override func layoutIfNeeded() {
+        articleImage.layer.cornerRadius = 30
+    }
 }
