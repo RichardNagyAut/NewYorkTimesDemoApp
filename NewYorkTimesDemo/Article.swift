@@ -13,7 +13,7 @@ class Article: NSObject {
         self.id = dto.id
         self.by = dto.by
         self.title = dto.title
-        self.url = url
+        self.url = dto.url
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         if let date = dto.publishedDate {
