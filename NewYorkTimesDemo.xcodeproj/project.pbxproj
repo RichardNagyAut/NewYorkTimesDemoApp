@@ -8,20 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		B1DCABA01F04E05A002C0441 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DCAB9F1F04E05A002C0441 /* AppDelegate.swift */; };
-		B1DCABA21F04E05A002C0441 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DCABA11F04E05A002C0441 /* ViewController.swift */; };
 		B1DCABA51F04E05A002C0441 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DCABA31F04E05A002C0441 /* Main.storyboard */; };
 		B1DCABA71F04E05A002C0441 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1DCABA61F04E05A002C0441 /* Assets.xcassets */; };
 		B1DCABAA1F04E05A002C0441 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DCABA81F04E05A002C0441 /* LaunchScreen.storyboard */; };
+		B1DCABB81F04E1EE002C0441 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DCABB71F04E1EE002C0441 /* AppCoordinator.swift */; };
+		B1DCABBA1F04E37E002C0441 /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DCABB91F04E37E002C0441 /* ArticleListViewController.swift */; };
+		B1DCABBD1F04E7D7002C0441 /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DCABBC1F04E7D7002C0441 /* ArticleListView.swift */; };
+		B1DCABC01F04E847002C0441 /* ArticlePM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DCABBF1F04E847002C0441 /* ArticlePM.swift */; };
+		B1DCABC21F04ECD8002C0441 /* ArticleListPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DCABC11F04ECD8002C0441 /* ArticleListPresenterInput.swift */; };
+		B1DCABC41F04ED75002C0441 /* ArticleListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DCABC31F04ED75002C0441 /* ArticleListInteractorInput.swift */; };
+		B1DCABC71F04EF42002C0441 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DCABC61F04EF42002C0441 /* Article.swift */; };
+		B1DCABCB1F04F10C002C0441 /* ArticleDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DCABCA1F04F10C002C0441 /* ArticleDTO.swift */; };
+		B1DCABCD1F04F1B7002C0441 /* ArticleListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DCABCC1F04F1B6002C0441 /* ArticleListPresenter.swift */; };
+		B1DCABCF1F04F3BC002C0441 /* ArticleListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DCABCE1F04F3BC002C0441 /* ArticleListInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B1DCAB9C1F04E05A002C0441 /* NewYorkTimesDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewYorkTimesDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1DCAB9F1F04E05A002C0441 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B1DCABA11F04E05A002C0441 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B1DCABA41F04E05A002C0441 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1DCABA61F04E05A002C0441 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1DCABA91F04E05A002C0441 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1DCABAB1F04E05A002C0441 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1DCABB71F04E1EE002C0441 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		B1DCABB91F04E37E002C0441 /* ArticleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
+		B1DCABBC1F04E7D7002C0441 /* ArticleListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
+		B1DCABBF1F04E847002C0441 /* ArticlePM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlePM.swift; sourceTree = "<group>"; };
+		B1DCABC11F04ECD8002C0441 /* ArticleListPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListPresenterInput.swift; sourceTree = "<group>"; };
+		B1DCABC31F04ED75002C0441 /* ArticleListInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListInteractorInput.swift; sourceTree = "<group>"; };
+		B1DCABC61F04EF42002C0441 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		B1DCABCA1F04F10C002C0441 /* ArticleDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDTO.swift; sourceTree = "<group>"; };
+		B1DCABCC1F04F1B6002C0441 /* ArticleListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListPresenter.swift; sourceTree = "<group>"; };
+		B1DCABCE1F04F3BC002C0441 /* ArticleListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +72,79 @@
 		B1DCAB9E1F04E05A002C0441 /* NewYorkTimesDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B1DCABBE1F04E836002C0441 /* Model */,
+				B1DCABB61F04E1BE002C0441 /* Coordinator */,
+				B1DCABB11F04E127002C0441 /* ArticleList */,
 				B1DCAB9F1F04E05A002C0441 /* AppDelegate.swift */,
-				B1DCABA11F04E05A002C0441 /* ViewController.swift */,
 				B1DCABA31F04E05A002C0441 /* Main.storyboard */,
 				B1DCABA61F04E05A002C0441 /* Assets.xcassets */,
 				B1DCABA81F04E05A002C0441 /* LaunchScreen.storyboard */,
 				B1DCABAB1F04E05A002C0441 /* Info.plist */,
 			);
 			path = NewYorkTimesDemo;
+			sourceTree = "<group>";
+		};
+		B1DCABB11F04E127002C0441 /* ArticleList */ = {
+			isa = PBXGroup;
+			children = (
+				B1DCABB31F04E146002C0441 /* Interactor */,
+				B1DCABB51F04E1A5002C0441 /* Presenter */,
+				B1DCABB21F04E13B002C0441 /* View */,
+			);
+			name = ArticleList;
+			sourceTree = "<group>";
+		};
+		B1DCABB21F04E13B002C0441 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B1DCABB91F04E37E002C0441 /* ArticleListViewController.swift */,
+				B1DCABBC1F04E7D7002C0441 /* ArticleListView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B1DCABB31F04E146002C0441 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B1DCABC31F04ED75002C0441 /* ArticleListInteractorInput.swift */,
+				B1DCABCE1F04F3BC002C0441 /* ArticleListInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		B1DCABB51F04E1A5002C0441 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B1DCABC11F04ECD8002C0441 /* ArticleListPresenterInput.swift */,
+				B1DCABCC1F04F1B6002C0441 /* ArticleListPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		B1DCABB61F04E1BE002C0441 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B1DCABB71F04E1EE002C0441 /* AppCoordinator.swift */,
+			);
+			name = Coordinator;
+			sourceTree = "<group>";
+		};
+		B1DCABBE1F04E836002C0441 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B1DCABC51F04EE4A002C0441 /* Article */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B1DCABC51F04EE4A002C0441 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				B1DCABC61F04EF42002C0441 /* Article.swift */,
+				B1DCABBF1F04E847002C0441 /* ArticlePM.swift */,
+				B1DCABCA1F04F10C002C0441 /* ArticleDTO.swift */,
+			);
+			name = Article;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +220,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1DCABA21F04E05A002C0441 /* ViewController.swift in Sources */,
+				B1DCABCB1F04F10C002C0441 /* ArticleDTO.swift in Sources */,
+				B1DCABC01F04E847002C0441 /* ArticlePM.swift in Sources */,
+				B1DCABCF1F04F3BC002C0441 /* ArticleListInteractor.swift in Sources */,
+				B1DCABBD1F04E7D7002C0441 /* ArticleListView.swift in Sources */,
+				B1DCABCD1F04F1B7002C0441 /* ArticleListPresenter.swift in Sources */,
+				B1DCABC41F04ED75002C0441 /* ArticleListInteractorInput.swift in Sources */,
+				B1DCABBA1F04E37E002C0441 /* ArticleListViewController.swift in Sources */,
+				B1DCABC71F04EF42002C0441 /* Article.swift in Sources */,
+				B1DCABC21F04ECD8002C0441 /* ArticleListPresenterInput.swift in Sources */,
+				B1DCABB81F04E1EE002C0441 /* AppCoordinator.swift in Sources */,
 				B1DCABA01F04E05A002C0441 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
