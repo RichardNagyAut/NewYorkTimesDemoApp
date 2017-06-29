@@ -6,4 +6,5 @@ protocol ArticleListPresenterInput{
     var interactor: ArticleListInteractorInput! {get set}
 
     func getMostPopularArticles()
+    func showContentForArticle(id: Int64)
 }

@@ -15,4 +15,8 @@ class ArticleListInteractor: ArticleListInteractorInput {
             print("Error")
         }
     }
+    
+    func getArticles() -> [Article]? {
+        return articles
+    }
 }

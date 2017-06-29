@@ -1,5 +1,6 @@
 import Foundation
 import UIKit
+import SafariServices
 
 /// Root coordinator managing the window and it's child coordinators
 class AppCoordinator {
@@ -18,10 +19,17 @@ class AppCoordinator {
     func start() {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         if let vc = storyboard.instantiateInitialViewController() as? ArticleListViewController! {
-            vc.presenter = ArticleListPresenter()
+            vc.presenter = ArticleListPresenter(coordinator: self)
             vc.presenter.interactor = ArticleListInteractor()
             vc.presenter.view  = vc
             self.rootViewController.setViewControllers([vc], animated: false)
+        }
+    }
+    
+    func showSafariController(uri: String) {
+        if let url = URL(string: uri) {
+            let vc = SFSafariViewController(url: url, entersReaderIfAvailable: true)
+            self.rootViewController.pushViewController(vc, animated: true)
         }
     }
 }

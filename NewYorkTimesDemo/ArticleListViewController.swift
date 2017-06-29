@@ -43,7 +43,9 @@ class ArticleListViewController: UIViewController, ArticleListView {
 
 extension ArticleListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        if let id = articles[indexPath.row].id {
+            presenter.showContentForArticle(id: id)
+        }
     }
 }
 
