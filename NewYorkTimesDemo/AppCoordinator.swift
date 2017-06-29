@@ -21,7 +21,7 @@ class AppCoordinator {
             vc.presenter = ArticleListPresenter()
             vc.presenter.interactor = ArticleListInteractor()
             vc.presenter.view  = vc
-            self.rootViewController.setViewControllers([vc], animated: true)
+            self.rootViewController.setViewControllers([vc], animated: false)
         }
     }
 }

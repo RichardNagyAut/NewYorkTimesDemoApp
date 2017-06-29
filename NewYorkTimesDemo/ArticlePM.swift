@@ -9,7 +9,7 @@ struct ArticlePM {
     var id: Int64?
     var by: String?
     
-    init?(model: Article) {
+    init(model: Article) {
         
     }
 }

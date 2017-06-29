@@ -21,6 +21,8 @@
 		B1DCABCB1F04F10C002C0441 /* ArticleDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DCABCA1F04F10C002C0441 /* ArticleDTO.swift */; };
 		B1DCABCD1F04F1B7002C0441 /* ArticleListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DCABCC1F04F1B6002C0441 /* ArticleListPresenter.swift */; };
 		B1DCABCF1F04F3BC002C0441 /* ArticleListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DCABCE1F04F3BC002C0441 /* ArticleListInteractor.swift */; };
+		B1DCABD11F04F718002C0441 /* ArticleListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DCABD01F04F718002C0441 /* ArticleListTableViewCell.swift */; };
+		B1DCABD41F0510E3002C0441 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1DCABD61F0510E3002C0441 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,9 @@
 		B1DCABCA1F04F10C002C0441 /* ArticleDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDTO.swift; sourceTree = "<group>"; };
 		B1DCABCC1F04F1B6002C0441 /* ArticleListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListPresenter.swift; sourceTree = "<group>"; };
 		B1DCABCE1F04F3BC002C0441 /* ArticleListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListInteractor.swift; sourceTree = "<group>"; };
+		B1DCABD01F04F718002C0441 /* ArticleListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListTableViewCell.swift; sourceTree = "<group>"; };
+		B1DCABD51F0510E3002C0441 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B1DCABD71F0510E9002C0441 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +85,7 @@
 				B1DCABA61F04E05A002C0441 /* Assets.xcassets */,
 				B1DCABA81F04E05A002C0441 /* LaunchScreen.storyboard */,
 				B1DCABAB1F04E05A002C0441 /* Info.plist */,
+				B1DCABD61F0510E3002C0441 /* Localizable.strings */,
 			);
 			path = NewYorkTimesDemo;
 			sourceTree = "<group>";
@@ -99,6 +105,7 @@
 			children = (
 				B1DCABB91F04E37E002C0441 /* ArticleListViewController.swift */,
 				B1DCABBC1F04E7D7002C0441 /* ArticleListView.swift */,
+				B1DCABD01F04F718002C0441 /* ArticleListTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -208,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1DCABAA1F04E05A002C0441 /* LaunchScreen.storyboard in Resources */,
+				B1DCABD41F0510E3002C0441 /* Localizable.strings in Resources */,
 				B1DCABA71F04E05A002C0441 /* Assets.xcassets in Resources */,
 				B1DCABA51F04E05A002C0441 /* Main.storyboard in Resources */,
 			);
@@ -228,6 +236,7 @@
 				B1DCABC41F04ED75002C0441 /* ArticleListInteractorInput.swift in Sources */,
 				B1DCABBA1F04E37E002C0441 /* ArticleListViewController.swift in Sources */,
 				B1DCABC71F04EF42002C0441 /* Article.swift in Sources */,
+				B1DCABD11F04F718002C0441 /* ArticleListTableViewCell.swift in Sources */,
 				B1DCABC21F04ECD8002C0441 /* ArticleListPresenterInput.swift in Sources */,
 				B1DCABB81F04E1EE002C0441 /* AppCoordinator.swift in Sources */,
 				B1DCABA01F04E05A002C0441 /* AppDelegate.swift in Sources */,
@@ -251,6 +260,15 @@
 				B1DCABA91F04E05A002C0441 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B1DCABD61F0510E3002C0441 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1DCABD51F0510E3002C0441 /* Base */,
+				B1DCABD71F0510E9002C0441 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -357,6 +375,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E8Q9KQPZUK;
 				INFOPLIST_FILE = NewYorkTimesDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hu.autsoft.NewYorkTimesDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -370,6 +389,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E8Q9KQPZUK;
 				INFOPLIST_FILE = NewYorkTimesDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hu.autsoft.NewYorkTimesDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
