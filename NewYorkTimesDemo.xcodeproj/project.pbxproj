@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B159BBDC1F062A5400D9E3D0 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B159BBDB1F062A5400D9E3D0 /* NetworkConstants.swift */; };
 		B1DCABA01F04E05A002C0441 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DCAB9F1F04E05A002C0441 /* AppDelegate.swift */; };
 		B1DCABA51F04E05A002C0441 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DCABA31F04E05A002C0441 /* Main.storyboard */; };
 		B1DCABA71F04E05A002C0441 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1DCABA61F04E05A002C0441 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B159BBDB1F062A5400D9E3D0 /* NetworkConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		B1DCAB9C1F04E05A002C0441 /* NewYorkTimesDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewYorkTimesDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1DCAB9F1F04E05A002C0441 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1DCABA41F04E05A002C0441 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				B1DCABD91F05225A002C0441 /* NetworkService.swift */,
+				B159BBDB1F062A5400D9E3D0 /* NetworkConstants.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B159BBDC1F062A5400D9E3D0 /* NetworkConstants.swift in Sources */,
 				B1DCABCB1F04F10C002C0441 /* ArticleDTO.swift in Sources */,
 				B1DCABC01F04E847002C0441 /* ArticlePM.swift in Sources */,
 				B1DCABCF1F04F3BC002C0441 /* ArticleListInteractor.swift in Sources */,
