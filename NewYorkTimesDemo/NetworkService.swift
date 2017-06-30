@@ -15,10 +15,14 @@ class NetworkService: NSObject {
     
     func fetchMostPopularArticles(successHandler: fetchSuccess?, failure: fetchFailure?) {
         let session = URLSession.shared
-        let dataTask = session.dataTask(with: URL(string: "https://api.nytimes.com/svc/mostpopular/v2/mostviewed/all-sections/7.json?api-key=dede2bfff3254c699a5f0eeb08e8c13c")!) { (data, response, error) in
+        guard let url = URL(string: NetworkConstants.baseURL.appending("mostpopular/v2/mostviewed/all-sections/7.json").appending(NetworkConstants.apiKey) ) else { return }
+        let dataTask = session.dataTask(with: url) { (data, response, error) in
             if let error = error {
                 failure?(error)
                 return
+            }
+            if let resp = response as? HTTPURLResponse, resp.statusCode != 200 {
+                failure?(error)
             }
             guard let data = data else { return }
             do {
