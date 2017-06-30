@@ -20,6 +20,9 @@ class NetworkService: NSObject {
                 failure?(error)
                 return
             }
+            if let resp = response as? HTTPURLResponse, resp.statusCode != 200 {
+                failure?(error)
+            }
             guard let data = data else { return }
             do {
                 let parsedData = try JSONSerialization.jsonObject(with: data as Data, options: .allowFragments)
