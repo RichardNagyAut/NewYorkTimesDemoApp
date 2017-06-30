@@ -18,7 +18,7 @@ class ArticleListPresenter: ArticleListPresenterInput {
                 }
                 view?.showArticles(articles: articlePMs)
             } else {
-                view?.showError(message: "Error")
+                view?.showError(message: NSLocalizedString("error_text_something_went_wrong", comment: ""))
             }
         }
     }

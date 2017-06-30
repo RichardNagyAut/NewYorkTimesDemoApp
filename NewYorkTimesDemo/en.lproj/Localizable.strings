@@ -1,1 +1,5 @@
-"articleListTitle"="NY Times Most Popular"; 
+"articleListTitle"="NY Times Most Popular";
+"error_text_something_went_wrong"="Something went wrong try again later";
+"error_title"="Error";
+"error_ok_button_title"="Ok";
+"error_refresh"="Refresh";

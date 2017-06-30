@@ -12,7 +12,7 @@ class ArticleListInteractor: ArticleListInteractorInput {
             self.articles = articles
             completionHandler?(true, articles)
         }) { (error) in
-            print("Error")
+            completionHandler?(false,[Article]())
         }
     }
     

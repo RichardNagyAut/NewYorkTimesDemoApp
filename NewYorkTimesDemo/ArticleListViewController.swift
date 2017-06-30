@@ -35,7 +35,16 @@ class ArticleListViewController: UIViewController, ArticleListView {
     }
     
     func showError(message: String) {
-        // TODO: show error message
+        let alert = UIAlertController(title: NSLocalizedString("error_title", comment: ""), message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: NSLocalizedString("error_ok_button_title", comment: ""), style: .cancel, handler: nil)
+        let refreshAction = UIAlertAction(title: NSLocalizedString("error_refresh", comment: ""), style: .default) {[weak self] (_) in
+            if let strongSelf = self {
+                strongSelf.presenter.getMostPopularArticles()
+            }
+        }
+        alert.addAction(okAction)
+        alert.addAction(refreshAction)
+        self.present(alert, animated: true, completion: nil)
     }
     
 }
