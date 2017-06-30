@@ -15,7 +15,7 @@ class NetworkService: NSObject {
     
     func fetchMostPopularArticles(successHandler: fetchSuccess?, failure: fetchFailure?) {
         let session = URLSession.shared
-        guard let url = URL(string: NetworkConstants.baseURL.appending("mostpopular/v2/mostviewed/all-sections/7.json").appending(NetworkConstants.apiKey) ) else { return }
+        guard let url = URL(string: NetworkConstants.baseURL.appending("mostpopular/v2/mostviewed/all-sections/7.json?api-key=").appending(NetworkConstants.apiKey) ) else { return }
         let dataTask = session.dataTask(with: url) { (data, response, error) in
             if let error = error {
                 failure?(error)
