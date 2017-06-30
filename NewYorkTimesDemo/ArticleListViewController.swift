@@ -40,17 +40,20 @@ class ArticleListViewController: UIViewController, ArticleListView {
     }
     
     func showError(message: String) {
-        self.loadingIndicator.isHidden = true
-        let alert = UIAlertController(title: NSLocalizedString("error_title", comment: ""), message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: NSLocalizedString("error_ok_button_title", comment: ""), style: .cancel) { [weak self] (_) in
-            if let strongSelf = self {
-                strongSelf.loadingIndicator.isHidden = true
-            }
+        DispatchQueue.main.async {
+            self.loadingIndicator.isHidden = true
         }
-        let refreshAction = UIAlertAction(title: NSLocalizedString("error_refresh", comment: ""), style: .default) {[weak self] (_) in
-            if let strongSelf = self {
-                strongSelf.loadingIndicator.isHidden = false
-                strongSelf.presenter.getMostPopularArticles()
+        
+        let alert = UIAlertController(title: NSLocalizedString("error_title", comment: ""), message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: NSLocalizedString("error_ok_button_title", comment: ""), style: .cancel)
+        let refreshAction = UIAlertAction(title: NSLocalizedString("error_refresh", comment: ""), style: .default) {[weak self, loadingIndicator = self.loadingIndicator] (_) in
+            if let loadingIndicator = loadingIndicator {
+                DispatchQueue.main.async {
+                    loadingIndicator.isHidden = false
+                }
+                if let strongSelf = self {
+                    strongSelf.presenter.getMostPopularArticles()
+                }
             }
         }
         alert.addAction(okAction)
