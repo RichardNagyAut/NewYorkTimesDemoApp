@@ -18,15 +18,14 @@ class ArticleListViewController: UIViewController, ArticleListView {
         tableView.estimatedRowHeight = 120
         self.tableView.rowHeight = UITableViewAutomaticDimension
         
+        self.tableView.refreshControl = UIRefreshControl()
+        self.tableView.refreshControl?.addTarget(self, action: #selector(refreshButtonTouchUpInside), for: .valueChanged)
+        
         self.loadingIndicator.isHidden = false
         self.navigationItem.title = NSLocalizedString("articleListTitle", comment: "")
         self.presenter.getMostPopularArticles()
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super .viewDidAppear(animated)
-    }
-    
+
     func showArticles(articles: [ArticlePM]) {
         self.articles = articles
         DispatchQueue.main.async { [weak tableView = self.tableView, loadingIndicator = self.loadingIndicator] in
@@ -62,6 +61,7 @@ class ArticleListViewController: UIViewController, ArticleListView {
     }
     
     @IBAction func refreshButtonTouchUpInside(_ sender: Any) {
+        self.tableView.refreshControl?.endRefreshing()
         self.loadingIndicator.isHidden = false
         self.presenter.getMostPopularArticles()
     }
